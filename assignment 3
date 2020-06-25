@@ -1,0 +1,272 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyM6UrJo12zQfxOIJcDT8I48",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Lohithreddy525/python-assignments/blob/master/assignment%203\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "RxO26Ibz1T5G",
+        "colab_type": "text"
+      },
+      "source": [
+        "Assignment 3"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "P6JMyqVb1VF0",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "zimphUFR1_kg",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 69
+        },
+        "outputId": "6557854d-c30a-4f44-9bf0-40fc73e4e239"
+      },
+      "source": [
+        " input1 = input(\"Enter the first input: \")\n",
+        "input2 = input(\"Enter the second input: \")\n",
+        "if input1==input2:\n",
+        "  print(\"The given inputs are equal.\")\n",
+        "else:\n",
+        "  print(\"The given inputs are not equal.\")"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the first input: Hi\n",
+            "Enter the second input: Hi\n",
+            "The given inputs are equal.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "b_AyUZzK2Jby",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XrKYtgQw2WZU",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 86
+        },
+        "outputId": "2eb8d0bc-d382-462c-d2e6-109affd65add"
+      },
+      "source": [
+        " input1 = input(\"Enter the first input: \")\n",
+        "input2 = input(\"Enter the second input: \")\n",
+        "input3 = input(\"Enter the third input: \")\n",
+        "if input1==input2 and input2==input3:\n",
+        "  print(\"The given inputs are equal.\")\n",
+        "else:\n",
+        "  if input1==input2 or input2==input3 or input3==input1:\n",
+        "    print(\"Two inputs are equal.\")\n",
+        "  else:\n",
+        "    print(\"None of the inputs are equal.\")"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the first input: 25\n",
+            "Enter the second input: 30\n",
+            "Enter the third input: 25\n",
+            "Two inputs are equal.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "PoME5pkR2t0E",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "KK1Zwe9t2u7G",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 69
+        },
+        "outputId": "b677b35e-0868-4b5a-fe02-c00594482630"
+      },
+      "source": [
+        " num1 = int(input(\"Enter the first number: \"))\n",
+        "num2 = int(input(\"Enter the second number: \"))\n",
+        "if num1+num2>5:\n",
+        "  print(\"The sum is greater than 5.\")\n",
+        "elif num1+num2<5:\n",
+        "  print(\"The sum is less than 5.\")\n",
+        "else:\n",
+        "  print(\"The sum is equal to 5.\")"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the first number: 3\n",
+            "Enter the second number: 6\n",
+            "The sum is greater than 5.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vsA87_4W26C_",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "hKWWdkrv3CPc",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "7cc4ad3d-1e11-431d-be3f-f570bce581c4"
+      },
+      "source": [
+        " marks = float(input(\"Enter the number of marks: \"))\n",
+        "pass_mark = 35\n",
+        "if marks>pass_mark:\n",
+        "  print(\"The marks you scored are greater than the pass mark. You have passed.\")\n",
+        "else:\n",
+        "  print(\"The marks you have scored are less than the pass mark. You have not passed.\")"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the number of marks: 36\n",
+            "The marks you scored are greater than the pass mark. You have passed.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "at5AsmcQ3TNU",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "__bHoAap3Uu7",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "outputId": "17d4acf9-6ef6-4d62-f8fa-bb8edf884435"
+      },
+      "source": [
+        " num1 = int(input(\"Enter the first number: \"))\n",
+        "num2 = int(input(\"Enter the second number: \"))\n",
+        "num3 = int(input(\"Enter the third number: \"))\n",
+        "if num1>num2:\n",
+        "  if num1>num3:\n",
+        "    print(\"The maximum of three numbers is:\",num1)\n",
+        "  else:\n",
+        "    print(\"The maximum of three numbers is:\",num3)\n",
+        "else:\n",
+        "  if num2>num3:\n",
+        "    print(\"The maximum of three numbers is:\",num2)  \n",
+        "  else:\n",
+        "    print(\"The maximum of three numbers is:\", num3)"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the first number: 2\n",
+            "Enter the second number: 4\n",
+            "Enter the third number: 3\n",
+            "The maximum of three numbers is: 4\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Z2APn0nB3r5N",
+        "colab_type": "text"
+      },
+      "source": [
+        ""
+      ]
+    }
+  ]
+}
