@@ -1,0 +1,295 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Lohithreddy525/python-assignments/blob/master/assignment%205\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wDkIUYNk6VCv",
+        "colab_type": "text"
+      },
+      "source": [
+        "Assignment 5"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "h8I61rmY6Wh8",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Jbezm6ZO6X0t",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "336971c5-a676-4742-8c0c-ec9b9f1f9b04"
+      },
+      "source": [
+        " import math\n",
+        "radius= float(input(\"Enter the radius of the circle: \"))\n",
+        "area= math.pi*(math.pow(radius,2))\n",
+        "result= round(area,3)\n",
+        "print(\"The area of the circle with radius\",radius,\"is:\",result)"
+      ],
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the radius of the circle: 2\n",
+            "The area of the circle with radius 2.0 is: 12.566\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "EQSHUuvV6fWT",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "lp9TzSKj6hei",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 89
+        },
+        "outputId": "3993ad76-0b7f-4fba-f736-11582241ae3b"
+      },
+      "source": [
+        " s= float(input(\"Enter the length of any side: \"))\n",
+        "n= int(input(\"Enter the number of sides in the regular polygon: \"))\n",
+        "numerator= math.pow(s,2)*n\n",
+        "denominator= 4*(math.tan(math.pi/n))\n",
+        "area= numerator/denominator\n",
+        "print(\"The area of the regular polygon is:\",area)"
+      ],
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the length of any side: 2\n",
+            "Enter the number of sides in the regular polygon: 10\n",
+            "The area of the regular polygon is: 30.776835371752536\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "gIP7JguR6tPi",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "TOCNGEvi6wsk",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 89
+        },
+        "outputId": "55fe6769-5bbd-4654-d9a7-a0125d888698"
+      },
+      "source": [
+        " import math\n",
+        "r= float(input(\"Enter the radius of the circle: \"))\n",
+        "c= int(input(\"Enter the value of central angle in degrees: \"))\n",
+        "part_one= (math.pow(r,2))/2\n",
+        "part_two= ((((math.pi)/180)*c)-math.sin(c))\n",
+        "area= part_one*part_two\n",
+        "print(\"Area of the segment of a circle of radius\",r, \"and central angle\",c,\"is:\",area)"
+      ],
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the radius of the circle: 2\n",
+            "Enter the value of central angle in degrees: 30\n",
+            "Area of the segment of a circle of radius 2.0 and central angle 30 is: 3.0232607993823213\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oDdUQ7xw65VU",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "CA-z5Tjg66XU",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "7ba9785c-2ba4-47d3-82e2-92742b0f3f0b"
+      },
+      "source": [
+        " from random import shuffle\n",
+        "mylist=[100,1,2,3,30,40,\"hey\",\"hello\"]\n",
+        "print(\"List before shuffling:\",mylist)\n",
+        "shuffle(mylist)\n",
+        "print(\"List after shuffling:\",mylist)"
+      ],
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "List before shuffling: [100, 1, 2, 3, 30, 40, 'hey', 'hello']\n",
+            "List after shuffling: [40, 1, 2, 30, 'hey', 100, 'hello', 3]\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Qn13HIU87Eu_",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "al9ZfR_u7F30",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "e65441bd-6ef2-436c-ca2c-6795d9915293"
+      },
+      "source": [
+        " import random\n",
+        "print(\"Random number between 1 and 10000 which has a step of 50:\",random.randrange(1,10000,50))"
+      ],
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Random number between 1 and 10000 which has a step of 50: 6301\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "FJ-cmHDh7P3g",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "S1XIe1M27RHb",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 227
+        },
+        "outputId": "41615842-0227-424c-92fc-ed2feeaedc10"
+      },
+      "source": [
+        " import math\n",
+        "print(\"Sine of 60=\",math.sin(60))\n",
+        "print(\"Cos of pi=\",math.cos(math.pi))\n",
+        "print(\"Tan of 90=\",math.tan(90))\n",
+        "print(\"Angle of sin 0.8660254037844386=\",math.sin(0.8660254037844386))\n",
+        "print(\"5^8=\",math.pow(5,8))\n",
+        "print(\"Square root of 400=\",math.sqrt(400))\n",
+        "print(\"The value of 5^e=\",math.pow(5,math.e))\n",
+        "print(\"Log(1024), base 2=\",math.log(1024,2))\n",
+        "print(\"Log(1024), base 10=\",math.log(1024,10))\n",
+        "print(\"Floor of 23.56=\",math.floor(23.56))\n",
+        "print(\"Ceiling of 23.56=\",math.ceil(23.56))"
+      ],
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Sine of 60= -0.3048106211022167\n",
+            "Cos of pi= -1.0\n",
+            "Tan of 90= -1.995200412208242\n",
+            "Angle of sin 0.8660254037844386= 0.7617599814162892\n",
+            "5^8= 390625.0\n",
+            "Square root of 400= 20.0\n",
+            "The value of 5^e= 79.43235916621322\n",
+            "Log(1024), base 2= 10.0\n",
+            "Log(1024), base 10= 3.0102999566398116\n",
+            "Floor of 23.56= 23\n",
+            "Ceiling of 23.56= 24\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
