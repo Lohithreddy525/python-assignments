@@ -1,0 +1,731 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Lohithreddy525/python-assignments/blob/master/assignment%207\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "_lBZcu3P_xuT",
+        "colab_type": "text"
+      },
+      "source": [
+        "Assignment 7"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Aovzi6nx_z0n",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "qgeAE9h8_1ZC",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "880850e6-1095-442a-fa3b-1216f569d22d"
+      },
+      "source": [
+        " import math\n",
+        "def sq_root(num):\n",
+        "    sq=math.sqrt(num)\n",
+        "    print(\"The square root of\",num,\"is:\",sq)\n",
+        "sq_root(81)"
+      ],
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The square root of 81 is: 9.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "QUJYNcJX_9lO",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "nilTdpgb_-1g",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "e9bd2430-e96b-474e-b654-f4502e377a13"
+      },
+      "source": [
+        " def check_num(num):\n",
+        "    if num>0:\n",
+        "        print(num,\"is positive.\")\n",
+        "    elif num<0:\n",
+        "        print(num,\"is negative.\")\n",
+        "    else:\n",
+        "        print(num,\"is zero.\")\n",
+        "check_num(-7)"
+      ],
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "-7 is negative.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "Mrsjr7QmADQ3",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Ks9xvbFWAEre",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "2e171946-dc3f-4933-b5d0-3e22e5c50f08"
+      },
+      "source": [
+        " def leap_year(year):\n",
+        "    if year%4==0:\n",
+        "        if year%100==0:\n",
+        "            if year%400==0:\n",
+        "                print(year,\"is a leap year.\")\n",
+        "            else:\n",
+        "                print(year,\"is not a leap year.\")\n",
+        "        else:\n",
+        "            print(year,\"is a leap year.\")\n",
+        "    else:\n",
+        "        print(year,\"is not a leap year.\")\n",
+        "leap_year(2000)"
+      ],
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "2000 is a leap year.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "OHM3EBOvAJbV",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NBzHOZuwAK1B",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "cd69f1f5-02d5-4898-c6fc-d5ee0862f463"
+      },
+      "source": [
+        " def fibonacci(num):\n",
+        "    first_term, second_term, count=0, 1, 0\n",
+        "    print(\"Fibonacci Series upto\",num,\"terms is given by: \")\n",
+        "    while count<num:\n",
+        "        print(first_term, end=\" \")\n",
+        "        next_term=first_term+second_term\n",
+        "        first_term=second_term\n",
+        "        second_term=next_term\n",
+        "        count+=1\n",
+        "fibonacci(7)"
+      ],
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Fibonacci Series upto 7 terms is given by: \n",
+            "0 1 1 2 3 5 8 "
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "LlcvwpgQARqS",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "RpNpLx3tAS27",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "e7bdb61c-cd4c-4ebd-f0eb-53a7349d8660"
+      },
+      "source": [
+        " def armstrong(num):\n",
+        "    sum=0\n",
+        "    temp=num\n",
+        "    while temp!=0:\n",
+        "        last_digit= temp%10\n",
+        "        sum=sum+pow(last_digit,len(str(num)))\n",
+        "        temp=temp//10\n",
+        "    if num==sum:\n",
+        "        print(num,\"is an Armstrong Number.\")\n",
+        "    else:\n",
+        "        print(num,\"is not an Armstrong Number.\")\n",
+        "armstrong(54748)"
+      ],
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "54748 is an Armstrong Number.\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "kDTf03vhAZD-",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "kF-fkBUEAaYs",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 121
+        },
+        "outputId": "e4c5b9fa-9967-495c-fe0a-687007af3f71"
+      },
+      "source": [
+        " start=int(input(\"Enter the starting index: \"))\n",
+        "end=int(input(\"Enter the ending index: \"))\n",
+        "if end>=1000:\n",
+        "    print(\"Invalid ending index.\")\n",
+        "else:\n",
+        "    for num in range(start,end+1):\n",
+        "        sum=0\n",
+        "        temp=num\n",
+        "        while temp>0:\n",
+        "            rem=temp%10\n",
+        "            sum+=rem**3\n",
+        "            temp=temp//10\n",
+        "        if num==sum:\n",
+        "            print(num)"
+      ],
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the starting index: 10\n",
+            "Enter the ending index: 999\n",
+            "153\n",
+            "370\n",
+            "371\n",
+            "407\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "4Afo0nC_A8mj",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "x9SsCQ8MA-Dd",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "9f4eb869-0e07-499d-ca0b-98fa782113ae"
+      },
+      "source": [
+        " string=input(\"Enter a string: \")\n",
+        "length=len(string)\n",
+        "print(\"The length of\",string,\"is\",length)"
+      ],
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a string: Lohith\n",
+            "The length of Lohith is 6\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "vAgkIjQmBD38",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "t1c4HCitBFtk",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "1079258c-8ab9-4710-ee69-47090f7d7968"
+      },
+      "source": [
+        " string=input(\"Enter a string: \")\n",
+        "frequency={}\n",
+        "for i in string:\n",
+        "    if i in frequency:\n",
+        "        frequency[i]+=1\n",
+        "    else:\n",
+        "        frequency[i]=1\n",
+        "print(\"Character frequency\",string,\"is:\",frequency)"
+      ],
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a string: Lohith\n",
+            "Character frequency Lohith is: {'L': 1, 'o': 1, 'h': 2, 'i': 1, 't': 1}\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "46BiLoJPBNnV",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZWWw8iMKBOqL",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 86
+        },
+        "outputId": "6c39c186-fe63-4aaf-e155-024a8a37d591"
+      },
+      "source": [
+        " str1= input(\"Enter the first string: \")\n",
+        "str2= input(\"Enter the secnd string: \")\n",
+        "str1_swap= str2[:1]+str1[1:]\n",
+        "str2_swap= str1[:1]+str2[1:]\n",
+        "#n=str1.pop(0)\n",
+        "#m=str2.pop(0)\n",
+        "#p=list(str1_swap)\n",
+        "#q=list(str2_swap)\n",
+        "#str1=m+p\n",
+        "#str2=n+q\n",
+        "print(str1_swap)\n",
+        "print(str2_swap)"
+      ],
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the first string: Apple\n",
+            "Enter the secnd string: Mango\n",
+            "Mpple\n",
+            "Aango\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "nxaqjyLtBczg",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Xctx8HbuBeiO",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "9ae5bea1-3a15-42bf-fbc6-93a70d5febe2"
+      },
+      "source": [
+        " string= input(\"Enter a string: \")\n",
+        "upper_case=string.upper()\n",
+        "lower_case=string.lower()\n",
+        "print(\"The string\",string,\"in upper case is\",upper_case,\"and in lower case is\",lower_case)"
+      ],
+      "execution_count": 41,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a string: ApPlE\n",
+            "The string ApPlE in upper case is APPLE and in lower case is apple\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "NZYA3Z0gBoRx",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "v3f6KkE9BpUw",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "e3e81e29-8312-41e8-d872-03f929da2316"
+      },
+      "source": [
+        " string= \"apple\\n\"\n",
+        "string.rstrip('\\n')"
+      ],
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'apple'"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 43
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fztKCz5GB0LS",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "NCv429etB1dP",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 89
+        },
+        "outputId": "ca97781c-6233-4e48-86ca-5d5227f83772"
+      },
+      "source": [
+        " string= input(\"Enter a string: \")\n",
+        "substr= input(\"Enter a substring present in the string: \")\n",
+        "string.count(substr)"
+      ],
+      "execution_count": 44,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a string: Mango\n",
+            "Enter a substring present in the string: ng\n"
+          ],
+          "name": "stdout"
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "1"
+            ]
+          },
+          "metadata": {
+            "tags": []
+          },
+          "execution_count": 44
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "24wCUPWnCE4-",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 7"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "S_w9mBHiCGL2",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "d5d659f0-4048-41be-a425-377887ff900a"
+      },
+      "source": [
+        " string=input(\"Enter a string: \")\n",
+        "mylist=list(string)\n",
+        "print(\"Converted list is\",mylist)"
+      ],
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a string: Happy\n",
+            "Converted list is ['H', 'a', 'p', 'p', 'y']\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "na8q5HmnCPyv",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 8"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cKS7nAn4CRK-",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 86
+        },
+        "outputId": "c78b3e22-f5dd-4ede-9a97-afacb15152ac"
+      },
+      "source": [
+        " string=input(\"Enter a string: \")\n",
+        "char=input(\"Enter the character to delete: \")\n",
+        "print(\"The resultant string is\",string.replace(char,\"\"))\n",
+        "print(\"The deleted char is\",char,\".\")"
+      ],
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a string: Maggie\n",
+            "Enter the character to delete: i\n",
+            "The resultant string is Magge\n",
+            "The deleted char is i .\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "eyDLIwQkCd1h",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 9"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SYc2Lmp8CfAm",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 158
+        },
+        "outputId": "d416e3fb-a11e-4ad2-c876-1c7f5ef04118"
+      },
+      "source": [
+        " string=input(\"Enter a string: \")\n",
+        "print(\"Characters in the string\",string,\"are:\")\n",
+        "for i in string:\n",
+        "    print(i)"
+      ],
+      "execution_count": 48,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a string: Mango\n",
+            "Characters in the string Mango are:\n",
+            "M\n",
+            "a\n",
+            "n\n",
+            "g\n",
+            "o\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "WKis4ICrClnp",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 10"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "LGvH7g9GCoqN",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 54
+        },
+        "outputId": "6faccff9-19b4-4685-dc9c-69a1d4ec59b4"
+      },
+      "source": [
+        " string= \"refrigerator\"\n",
+        "length=0\n",
+        "for i in string:\n",
+        "    length+=1\n",
+        "print(\"The length of the string\",string,\"is:\",length)"
+      ],
+      "execution_count": 49,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "The length of the string refrigerator is: 12\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
