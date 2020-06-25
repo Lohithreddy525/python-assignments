@@ -1,0 +1,413 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome to Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Lohithreddy525/python-assignments/blob/master/assignment%201\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wu4VQW6_wowA",
+        "colab_type": "text"
+      },
+      "source": [
+        "Assignment 1"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "JInZBbexwraz",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 1"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PyaWOK1rxP15",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 193
+        },
+        "outputId": "58eb88c1-18d2-4783-ba80-bf8e603be50a"
+      },
+      "source": [
+        " num1= int(input(\"Enter a number: \"))\n",
+        "num2= int(input(\"Enter another number: \"))\n",
+        "add= num1+num2\n",
+        "sub= num1-num2\n",
+        "pro= num1*num2\n",
+        "div= num1/num2\n",
+        "mod= num1%num2\n",
+        "power= num1**num2\n",
+        "floor_div= num1//num2\n",
+        "print(\"The sum is\", add)\n",
+        "print(\"The difference is\", sub)\n",
+        "print(\"The product is\", pro)\n",
+        "print(\"The division is\", div)\n",
+        "print(\"The remainder is\", mod)\n",
+        "print(\"The power of \", num1, \"to \", num2,  \"is \", power)\n",
+        "print(\"The floor division is\", floor_div)"
+      ],
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 20\n",
+            "Enter another number: 10\n",
+            "The sum is 30\n",
+            "The difference is 10\n",
+            "The product is 200\n",
+            "The division is 2.0\n",
+            "The remainder is 0\n",
+            "The power of  20 to  10 is  10240000000000\n",
+            "The floor division is 2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "1FTo8GhQxfr2",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 2"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "_GCDMbL0xg8L",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 34
+        },
+        "outputId": "b67cec9d-3742-4403-d439-5450cfd4c4b3"
+      },
+      "source": [
+        " principal = float(input(\"Enter the principal amount: \"))\n",
+        "time = float(input(\"Enter the time period: \"))\n",
+        "rate = float(input(\"Enter the rate of interest: \"))\n",
+        "simple_interest= (principal*time*rate)/100\n",
+        "print(\"Simple Interest = \", simple_interest)"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Simple Interest =  20.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "oXy5hvejxukP",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 3"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "SStpG5ZPxvs2",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "772b19e2-23c3-49d1-89de-01da4d6b5ce3"
+      },
+      "source": [
+        " radius= float(input(\"Enter the radius of the circle\"))\n",
+        "PI= 3.1412\n",
+        "area= PI*radius*radius\n",
+        "print(\"The area of the circle= \",area)"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the radius of the circle2\n",
+            "The area of the circle=  12.5648\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "6Ts-hLyex7dX",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 4"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7EbpG-A2x8zc",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 89
+        },
+        "outputId": "ec3371df-4683-4801-c2ac-7fa631c0714e"
+      },
+      "source": [
+        " base= float(input(\"Enter the base of the triange: \"))\n",
+        "height= float(input(\"Enter the height of the triange: \"))\n",
+        "tri_area= 0.5*base*height\n",
+        "print(\"The area of the triange= \",tri_area)"
+      ],
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the base of the triange: 2\n",
+            "Enter the height of the triange: 4\n",
+            "The area of the triange=  4.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "qxriphI_yKEt",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "tpL6OFqHyLRd",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "46e9907f-6173-40b4-b109-37690e8620a9"
+      },
+      "source": [
+        " celsius= float(input(\"Enter temp in Celsius: \"))\n",
+        "fahrenheit = (celsius * 9/5) + 32\n",
+        "print(\"Temperature in Fahrenheit is: \", fahrenheit)"
+      ],
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter temp in Celsius: 100\n",
+            "Temperature in Fahrenheit is:  212.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SSVP2kKXyb-Y",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 6"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rb-G3JQxydNd",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 69
+        },
+        "outputId": "4f29f0b1-4513-412f-d493-8716debd915d"
+      },
+      "source": [
+        " length= float(input(\"Enter the length: \"))\n",
+        "breadth= float(input(\"Enter the breadth: \"))\n",
+        "area_rect= length*breadth\n",
+        "print(\"Area of the rectange is: \",area_rect)"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the length: 10\n",
+            "Enter the breadth: 20\n",
+            "Area of the rectange is:  200.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yRs0Xhd4yjQE",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 7"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7zrjhX3uykt3",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 51
+        },
+        "outputId": "01756258-084b-4cfc-cf9d-1da7d511253b"
+      },
+      "source": [
+        " side= float(input(\"Enter the side of the square: \"))\n",
+        "perimeter= 4*side\n",
+        "print(\"Perimeter of the square= \",perimeter)"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the side of the square: 6\n",
+            "Perimeter of the square=  24.0\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "aSMOIdFgywo4",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 8"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "Tmq63JEOyyCD",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 71
+        },
+        "outputId": "c71370af-3bd0-4b0e-b32f-09421e6ca1b9"
+      },
+      "source": [
+        " rad= float(input(\"Enter the radius of the circle: \"))\n",
+        "circumference= 2*PI*rad\n",
+        "print(\"Circumference of the circle= \",circumference)\n",
+        "#the value of PI is take from the previous line of code used for area of the circle"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter the radius of the circle: 2\n",
+            "Circumference of the circle=  12.5648\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yMW4Zurgy4z2",
+        "colab_type": "text"
+      },
+      "source": [
+        "Question 9"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "mAIPNTucy6aR",
+        "colab_type": "code",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 106
+        },
+        "outputId": "5f45d115-546e-4344-df94-34d14f477b3a"
+      },
+      "source": [
+        " a= int(input(\"Enter a number: \"))\n",
+        "b= int(input(\"Enter another number: \"))\n",
+        "print(\"Numbers before swapping are:(a,b)= \", a,b)\n",
+        "a= a+b\n",
+        "b= a-b\n",
+        "a= a-b\n",
+        "print(\"Swapped numbers are:(a,b)= \",a,b)"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "text": [
+            "Enter a number: 2\n",
+            "Enter another number: 6\n",
+            "Numbers before swapping are:(a,b)=  2 6\n",
+            "Swapped numbers are:(a,b)=  6 2\n"
+          ],
+          "name": "stdout"
+        }
+      ]
+    }
+  ]
+}
